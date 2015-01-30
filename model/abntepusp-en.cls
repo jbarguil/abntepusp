@@ -1583,7 +1583,7 @@ Para mais informacoes, leia o manual da classe.\MessageBreak%
    \thispagestyle{\chaptertitlepagestyle}%
    \global\@topnum\z@%
    \@afterindentfalse%
-\renewcommand{\bibname}{Bibliography} % adaptação para ABNT/EPUSP
+\renewcommand{\bibname}{References} % adaptação para ABNT/EPUSP
    \@mkboth{\bibname}{\bibname}% end \chapter*{\bibname...}
    \ifthenelse{\boolean{ABNTincludeintoc}}%
       {\ABNTaddcontentsline{toc}{chapter}{\bibname}}%
