@@ -1,0 +1,154 @@
+\documentclass[a4paper,capchap,espacoduplo,normaltoc]{abntepusp-en} % Change "abntepusp-en" to "abntepusp" for Portuguese.
+
+%\usepackage[bookmarks,pdftex,a4paper,colorlinks=true,citecolor=black,urlcolor=blue,linkcolor=black,pdfpagemode=None]{hyperref}
+\usepackage[bookmarks,colorlinks=true,citecolor=black,urlcolor=blue,linkcolor=black,pdfpagemode=UseNone]{hyperref}
+\usepackage[centertags]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}  % Change "english" to "brazil" for Portuguese.
+\usepackage[alf,abnt-repeated-author-omit=yes]{abntcite}
+\usepackage{url}
+%\usepackage{winfonts}
+\usepackage{txfonts}
+
+%\fontfamily{arial}\selectfont
+%\renewcommand{\rmdefault}{arial}
+
+\newcommand{\TODO}[1]{~~\textcolor{red} {\textbf{TODO: #1}}}
+
+% Math -------------------------------------------------------------------
+\newtheorem{theorem}{Theorem}{\bfseries}{\itshape}
+\newtheorem{lemma}{Lemma}{\bfseries}{\itshape}
+\newtheorem{definition}{Definition}{\bfseries}{\itshape}
+\newtheorem{corollary}{Corollary}{\bfseries}{\itshape}
+\newtheoremstyle{example}{\topsep}{\topsep}%
+	{}%         Body font
+	{}%         Indent amount (empty = no indent, \parindent = para indent)
+	{\bfseries}% Thm head font
+	{:}%        Punctuation after thm head
+	{.5em}%     Space after thm head (\newline = linebreak)
+	{\thmname{#1}\thmnumber{ #2}\thmnote{ #3}}%         Thm head spec
+\theoremstyle{example}
+\newtheorem{example}{Example}
+
+\sloppy
+
+\begin{document}
+
+% document with one author
+\autorPoliI{Name}{Middle}{Lastname}
+
+% document with two authors
+%\autorPoliII{Name1}{Middle1}{Lastname1}{Name2}{Middle2}{Lastname2}
+
+% document with three authors
+%\autorPoliIII{Name1}{Middle1}{Lastname1}{Name2}{Middle2}{Lastname2}{Name3}{Middle3}{Lastname3}
+
+\titulo{<Title>}
+
+\orientador{<Adviser's Name>}
+
+\relatFapesp
+%\monografiaFormatura
+%\monografiaMBA
+%\qualificacaoMSc{<Área do Mestrado>}
+%\qualificacaoMSc{Enge\-nharia Elétrica}
+%\dissertacao{<Área do Mestrado>}
+%\qualificacaoDr{<Área do Mestrado>}
+%\teseDr{<Área do Doutorado>}
+%\teseLD
+%\memorialLD
+
+%\areaConcentracao{<Área de Concentração>}
+\areaConcentracao{Engenharia de Computação}
+
+%\departamento{<Departamento>}
+\departamento{Departamento de Engenharia de Computação e Sistemas Digitais (PCS)}
+
+\local{<Cidade>}
+
+\data{<Ano>}
+
+\dedicatoria{}
+
+\capa{}
+
+\folhaderosto{}
+
+% Ficha Catalográfica
+
+%\setboolean{PoliRevisao}{true} % gera o quadro de revisão após a defesa
+\renewcommand{\PoliFichaCatalograficaData}{%
+  1. Assunto \#1. 2. Assunto \#2. 3. Assunto \#3.
+  I. Universidade de São Paulo. Escola Politécnica.
+  \PoliDepartamentoData. II. t.}
+
+\fichacatalografica % formata a ficha
+
+\paginadedicatoria{}
+
+\begin{agradecimentos}
+\end{agradecimentos}
+
+\begin{resumo}
+\end{resumo}
+
+\begin{abstract}
+\end{abstract}
+
+\begin{resume}
+\end{resume}
+
+\begin{zusammenfassung}
+\end{zusammenfassung}
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\begin{listofabbrv}{1000}
+\item [USP] University of S\~ao Paulo
+\item [CFS] Courtois-Finiasz-Sendrier
+\end{listofabbrv}
+
+\begin{listofsymbols}{1000}
+\item [$\Delta(h)$] Dyadic signature
+\end{listofsymbols}
+
+\chapter{Introduction}\label{chp:intro}
+
+\section{Presentation}\label{sec:presentation}
+
+\section{Goals}\label{sec:goals}
+
+\section{Original contributions}\label{sec:contrib}
+
+\begin{example}
+This is an example.
+\qed
+\end{example}
+
+\section{Organization}
+
+\chapter{Another chapter}\label{chp:outrocap}
+
+This chapter develops the theory of~\cite{agashe-lauter-venkatesan,al-riyami-paterson,ansi-x9.62,balasubramanian-koblitz,blake-seroussi-smart,bleichenbacher,weimerskirch}.
+
+\[
+E = mc^2.
+\]
+
+\chapter{Conclusions}\label{chp:conclusion}
+
+\bibliography{Thesis-Model}
+
+\appendix
+
+\chapter{Demonstration of the Bifurcation Theorem}\label{app:apendiceA}
+
+\end{document}

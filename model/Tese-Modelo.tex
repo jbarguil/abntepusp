@@ -1,0 +1,155 @@
+\documentclass[a4paper,capchap,espacoduplo,normaltoc]{abntepusp} % Mude "abntepusp" para "abntepusp-en" para Inglês.
+
+%\usepackage[bookmarks,pdftex,a4paper,colorlinks=true,citecolor=black,urlcolor=blue,linkcolor=black,pdfpagemode=None]{hyperref}
+\usepackage[bookmarks,colorlinks=true,citecolor=black,urlcolor=blue,linkcolor=black,pdfpagemode=UseNone]{hyperref}
+\usepackage[centertags]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[brazil]{babel} % Mude "brazil" para "english" para Inglês.
+\usepackage[alf,abnt-repeated-author-omit=yes]{abntcite}
+\usepackage{url}
+%\usepackage{winfonts}
+\usepackage{txfonts}
+
+%\fontfamily{arial}\selectfont
+%\renewcommand{\rmdefault}{arial}
+
+% Comando útil
+\newcommand{\TODO}[1]{~~\textcolor{red} {\textbf{TODO: #1}}}
+
+% Math -------------------------------------------------------------------
+\newtheorem{theorem}{Teorema}{\bfseries}{\itshape}
+\newtheorem{lemma}{Lema}{\bfseries}{\itshape}
+\newtheorem{definition}{Definição}{\bfseries}{\itshape}
+\newtheorem{corollary}{Corolário}{\bfseries}{\itshape}
+\newtheoremstyle{example}{\topsep}{\topsep}%
+	{}%         Body font
+	{}%         Indent amount (empty = no indent, \parindent = para indent)
+	{\bfseries}% Thm head font
+	{:}%        Punctuation after thm head
+	{.5em}%     Space after thm head (\newline = linebreak)
+	{\thmname{#1}\thmnumber{ #2}\thmnote{ #3}}%         Thm head spec
+\theoremstyle{example}
+\newtheorem{example}{Exemplo}
+
+\sloppy
+
+\begin{document}
+
+% documento propriamente monográfico: um único autor
+\autorPoliI{Nome}{Meio}{Sobrenome}
+
+% documento com dois autores
+%\autorPoliII{Nome1}{Meio1}{Sobrenome1}{Nome2}{Meio2}{Sobrenome2}
+
+% documento com três autores
+%\autorPoliIII{Nome1}{Meio1}{Sobrenome1}{Nome2}{Meio2}{Sobrenome2}{Nome3}{Meio3}{Sobrenome3}
+
+\titulo{<Título>}
+
+\orientador{<Nome do Orientador>}
+
+\relatFapesp
+%\monografiaFormatura
+%\monografiaMBA
+%\qualificacaoMSc{<Área do Mestrado>}
+%\qualificacaoMSc{Enge\-nharia Elétrica}
+%\dissertacao{<Área do Mestrado>}
+%\qualificacaoDr{<Área do Mestrado>}
+%\teseDr{<Área do Doutorado>}
+%\teseLD
+%\memorialLD
+
+%\areaConcentracao{<Área de Concentração>}
+\areaConcentracao{Engenharia de Computação}
+
+%\departamento{<Departamento>}
+\departamento{Departamento de Engenharia de Computação e Sistemas Digitais (PCS)}
+
+\local{<Cidade>}
+
+\data{<Ano>}
+
+\dedicatoria{}
+
+\capa{}
+
+\folhaderosto{}
+
+% Ficha Catalográfica
+
+%\setboolean{PoliRevisao}{true} % gera o quadro de revisão após a defesa
+\renewcommand{\PoliFichaCatalograficaData}{%
+  1. Assunto \#1. 2. Assunto \#2. 3. Assunto \#3.
+  I. Universidade de São Paulo. Escola Politécnica.
+  \PoliDepartamentoData. II. t.}
+
+\fichacatalografica % formata a ficha
+
+\paginadedicatoria{}
+
+\begin{agradecimentos}
+\end{agradecimentos}
+
+\begin{resumo}
+\end{resumo}
+
+\begin{abstract}
+\end{abstract}
+
+\begin{resume}
+\end{resume}
+
+\begin{zusammenfassung}
+\end{zusammenfassung}
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\begin{listofabbrv}{1000}
+\item [USP] Universidade de São Paulo
+\item [CFS] Courtois-Finiasz-Sendrier
+\end{listofabbrv}
+
+\begin{listofsymbols}{1000}
+\item [$\Delta(h)$] Assinatura diádica
+\end{listofsymbols}
+
+\chapter{Introdução}\label{chp:intro}
+
+\section{Apresentação}\label{sec:presentation}
+
+\section{Objetivos}\label{sec:goals}
+
+\section{Contribuições originais}\label{sec:contrib}
+
+\begin{example}
+Isto é um exemplo.
+\qed
+\end{example}
+
+\section{Organização}
+
+\chapter{Outro capítulo}\label{chp:outrocap}
+
+Este capítulo desenvolve a teoria de~\cite{agashe-lauter-venkatesan,al-riyami-paterson,ansi-x9.62,balasubramanian-koblitz,blake-seroussi-smart,bleichenbacher,weimerskirch}.
+
+\[
+E = mc^2.
+\]
+
+\chapter{Conclusões}\label{chp:conclusion}
+
+\bibliography{Tese-Modelo}
+
+\appendix
+
+\chapter{Demonstração do Lema da Bifurcação}\label{app:apendiceA}
+
+\end{document}

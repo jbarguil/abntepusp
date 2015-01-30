@@ -1,0 +1,14 @@
+# LaTeX files
+*.aux
+*.log
+*.out
+*.pdf
+*.spl
+*.bbl
+*.blg
+
+# ABNT LaTeX
+*.idx
+*.lof
+*.lot
+*.toc
