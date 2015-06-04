@@ -818,7 +818,7 @@ FUNCTION {format.names.for.label1} %abnt-alf only
     { s nameptr "{ll}{ jj}" format.name$ 't :=
       nameptr #1 >
         {namesleft #1 >
-            { numnames #3 > {#0 'namesleft :=} {", " * t * } if$ }
+            { numnames #3 > {#0 'namesleft := bbl.etal *} {", " * t * } if$ }
             { t "others" =
           {abnt.no.etal.label 'skip$ {bbl.etal *} if$}
           {numnames nameptr = { bbl.and * t *} 'skip$ if$}
@@ -839,7 +839,7 @@ FUNCTION {format.names.for.label2} %abnt-alf only
     { s nameptr "{ll}{ jj}" format.name$ "u" change.case$ 't :=
       nameptr #1 >
         {namesleft #1 >
-            { numnames #3 > {#0 'namesleft :=} {"; " * t * } if$ }
+            { numnames #3 > {#0 'namesleft := bbl.etal *} {"; " * t * } if$ }
             { t "OTHERS" =
           {abnt.no.etal.label 'skip$ {bbl.etal *} if$}
           {numnames nameptr = { bbl.semicolon * t *} 'skip$ if$}
@@ -1396,7 +1396,7 @@ FUNCTION {set.default.abnt.variables}
   #1 'abnt.refinfo :=
   #0 'abnt.show.options := % #0 "no"; #1 "warn"; #2 "list"
   #0 'abnt.thesis.year :=  % #0 "final"; #1 "title"; #2 "both"
-  #0 'abnt.dont.use.etal :=
+  #1 'abnt.dont.use.etal :=
   #0 'abnt.no.etal.label := % #0 use etal in label; #1 don't use it
 }
 EXECUTE {set.default.abnt.variables}
