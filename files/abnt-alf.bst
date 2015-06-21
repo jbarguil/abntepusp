@@ -242,7 +242,7 @@ FUNCTION {bbl.no.publisher} {"[s.n.]"}
 FUNCTION {bbl.techrep} { "Rel. Tec." }
 FUNCTION {bbl.url.accessdate} {"Acesso em: "}
 FUNCTION {bbl.url.begin} {"Dispon{\'\i}vel em: $<$"}
-FUNCTION {bbl.url.end} {"$>$"}
+FUNCTION {bbl.url.end} {"$>$. Acesso em: \today"}
 FUNCTION {bbl.volume} { "v." }
 
 
