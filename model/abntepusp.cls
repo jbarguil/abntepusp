@@ -1997,7 +1997,7 @@ Para mais informacoes, leia o manual da classe.\MessageBreak%
 
 \newboolean{PoliRevisao}
 \setboolean{PoliRevisao}{false}
-\newcommand{\PoliEdicaoRevisadaData}{-- ed.~rev. --}
+\newcommand{\PoliEdicaoRevisadaData}{-- versão~corr. --}
 \newcommand{\PoliDataDaRevisao}{\today}
 \newcommand{\PoliQuadroDeRevisaoData}{Este exemplar foi revisado e alterado em relação à versão original, sob responsabilidade única do autor e com a anuência de seu orientador.}
 \newcommand{\PoliAssinaturaAutor}{Assinatura do autor}
